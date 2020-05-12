@@ -62,11 +62,13 @@ table {
 html, body {
 	height: 100%;
 	width: 100%;
-	margin: 2%;
+	margin: 5%;
+	padding: 2%;
 	display: flex;
 	flex-flow: column wrap;
 	align-content: space-between;
 	background-color: #D9CAB8;
+	border: @contain;
 	h1, h2, h3{
 		font-family: @header-font;
 		color: #44302A;
@@ -86,21 +88,50 @@ html, body {
 		font-family: @main-font;
 }
 }
+.top-content{
+	width:100%;
+	display: flex;
+	flex-flow: row wrap;
+	.top-one{
+		width: 100%;
+		border-bottom: 1px solid gray;
+		margin-bottom: 2%;
+		padding-bottom: 2%;
+	}
+	.top-two{
+		width:100%;
+		margin-top: 2%;
+	}
+		img{
+			width: 50%;
+		}
+		h1{
+			font-size: 2rem;
+			width: 100%;
+		}
+		h2{
+			width: 100%;
+		}
+		button{
+			width: 20%;
+		}
+	}
 
-header{
-	h1{
-		font-size: 2rem;
-	}
-	img{
-		width: 50%;
-	}
-	button{
-		width: 20%;
+.middle-content{
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	border: @contain;
+	justify-content: space-between;
+	div{
+		width: 30%;
 	}
 }
-.middle-content div{
-	width: 50%;
-	display: flex;
-	flex-flow: column wrap;
+
+.bottom-content{
 	border: @contain;
 }
+footer{
+	border: @contain;
+}
+

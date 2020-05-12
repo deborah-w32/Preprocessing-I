@@ -53,18 +53,54 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Raleway:wght@300&display=swap');
 @main-font:'Raleway', sans-serif;
 @header-font:'Merienda', cursive;
+@contain: 1px solid black;
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 2%;
+	display: flex;
+	flex-flow: column wrap;
+	align-content: space-between;
+	background-color: #D9CAB8;
+	h1, h2, h3{
+		font-family: @header-font;
+		color: #44302A;
+}
+	p{
+			font-family: @main-font;
+}
+	table{
+		font-family: @main-font;
+		text-align: center;
+	}
+	th{
+		font-family: @header-font;
+		color: #44302A;
+	}	
+	ul{
+		font-family: @main-font;
+}
+}
 
 header{
-	h1, h2{
-		font-family: @header-font;}
+	h1{
+		font-size: 2rem;
+	}
+	img{
+		width: 50%;
+	}
+	button{
+		width: 20%;
+	}
 }
-p{
-	font-family: @main-font;
+.middle-content div{
+	width: 50%;
+	display: flex;
+	flex-flow: column wrap;
+	border: @contain;
 }

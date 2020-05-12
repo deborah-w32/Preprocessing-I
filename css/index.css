@@ -130,10 +130,6 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
-}
 @font-face {
   font-family: 'Merienda';
   font-style: normal;
@@ -148,10 +144,55 @@ body {
   font-display: swap;
   src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqaqE.ttf) format('truetype');
 }
-header h1,
-header h2 {
-  font-family: 'Merienda', cursive;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 2%;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  background-color: #D9CAB8;
 }
-p {
+html h1,
+body h1,
+html h2,
+body h2,
+html h3,
+body h3 {
+  font-family: 'Merienda', cursive;
+  color: #44302A;
+}
+html p,
+body p {
   font-family: 'Raleway', sans-serif;
+}
+html table,
+body table {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+html th,
+body th {
+  font-family: 'Merienda', cursive;
+  color: #44302A;
+}
+html ul,
+body ul {
+  font-family: 'Raleway', sans-serif;
+}
+header h1 {
+  font-size: 2rem;
+}
+header img {
+  width: 50%;
+}
+header button {
+  width: 20%;
+}
+.middle-content div {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  border: 1px solid black;
 }

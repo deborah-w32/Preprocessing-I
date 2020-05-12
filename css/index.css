@@ -1,1 +1,198 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Merienda';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Merienda Bold'), local('Merienda-Bold'), url(https://fonts.gstatic.com/s/merienda/v8/gNMAW3x8Qoy5_mf8uWu-Fa-y.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqaqE.ttf) format('truetype');
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 2%;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  background-color: #D9CAB8;
+}
+html h1,
+body h1,
+html h2,
+body h2,
+html h3,
+body h3 {
+  font-family: 'Merienda', cursive;
+  color: #44302A;
+}
+html p,
+body p {
+  font-family: 'Raleway', sans-serif;
+}
+html table,
+body table {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+html th,
+body th {
+  font-family: 'Merienda', cursive;
+  color: #44302A;
+}
+html ul,
+body ul {
+  font-family: 'Raleway', sans-serif;
+}
+header h1 {
+  font-size: 2rem;
+}
+header img {
+  width: 50%;
+}
+header button {
+  width: 20%;
+}
+.middle-content div {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  border: 1px solid black;
+}
